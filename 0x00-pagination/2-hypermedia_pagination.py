@@ -46,7 +46,7 @@ class Server:
         """Get the nth `page` of size `page_size` from the dataset
         """
         data = self.get_page(page, page_size)
-        total_pages = len(data) // page_size
+        total_pages = len(self.dataset()) // page_size
         return {
             "page_size": page_size,
             "page": page,
