@@ -45,7 +45,7 @@ class Server:
     def get_hyper(self, page: int = 1, page_size: int = 10) -> Dict:
         """Get the nth `page` of size `page_size` from the dataset
         """
-        data = self.get_page(page, page_size),
+        data = self.get_page(page, page_size)
         total_pages = len(data) // page_size
         return {
             "page_size": page_size,
