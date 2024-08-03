@@ -1,0 +1,10 @@
+Babel==2.9.1
+click==8.1.7
+Flask==2.1.0
+Flask-Babel==2.0.0
+itsdangerous==2.1.2
+Jinja2==3.1.1
+MarkupSafe==2.1.1
+pytz==2022.1
+Werkzeug==2.1.0
+setuptools==40.8.0
