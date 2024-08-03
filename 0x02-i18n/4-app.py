@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
-"""Basic Babel setup for the Flask App"""
+"""This is a module-level documentation"""
 from flask import Flask, render_template, request
-from flask_babel import Babel, _
+from flask_babel import Babel
 
 
 class Config:
@@ -25,7 +25,7 @@ babel = Babel(app)
 def get_locale():
     """Get hte locale from the request"""
     lang = request.args.get("locale")
-    if lang:
+    if lang in app.config["LANGUAGES"]:
         return lang
     return request.accept_languages.best_match(app.config["LANGUAGES"])
 
