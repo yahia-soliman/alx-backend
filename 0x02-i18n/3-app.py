@@ -1,5 +1,8 @@
 #!/usr/bin/env python3
-"""Flask app with i18n"""
+"""Flask app with i18n
+Usage:
+    flask --app 3-app.py:app run
+"""
 from flask import Flask, render_template, request
 from flask_babel import Babel, _
 
@@ -31,4 +34,4 @@ def get_locale():
 @app.route("/")
 def home_page():
     """Render the Home page"""
-    return render_template("3-index.html")
+    return render_template("2-index.html")
