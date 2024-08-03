@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Basic Babel setup for the Flask App"""
+"""Flask app with i18n"""
 from flask import Flask, render_template, request
 from flask_babel import Babel, _
 
@@ -18,6 +18,7 @@ class Config:
 
 app = Flask(__name__)
 app.config.from_object(Config)
+app.url_map.strict_slashes = False
 babel = Babel(app)
 
 
