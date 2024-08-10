@@ -4,7 +4,7 @@ Usage:
     flask --app 3-app.py:app run
 """
 from flask import Flask, render_template, request
-from flask_babel import Babel, _
+from flask_babel import Babel
 
 
 class Config:
